@@ -59,8 +59,6 @@ if streamlit.button('Get Fruit Load List'):
   
 streamlit.header("The fruit load list contains")
 streamlit.dataframe(my_data_row)
-
-    
     
 # use pandas to normalize json reposnse
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
