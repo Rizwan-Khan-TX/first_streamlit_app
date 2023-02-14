@@ -39,12 +39,11 @@ except URLError as e:
   streamlit.error()
   
 streamlit.write('The user entered ', fruit_choice)
-streamlit.stop()
-##---import requests
-#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
-#
-#streamlit.header("The fruit load list contains:")
-##---Snoflake-related functions
+
+#---import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+streamlit.header("The fruit load list contains:")
+#---Snoflake-related functions
 #def get_fruit_load_list():
 #  with my_cnx.cursor() as my_cur:
 #    my_cur.execute("select * from fruit_load_list")
