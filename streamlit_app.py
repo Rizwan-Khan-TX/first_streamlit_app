@@ -55,14 +55,13 @@ if streamlit.button('Get Fruit Load List'):
   my_data_rows=get_fruit_load_list()
   streamly.dataframe(my_data_rows)
 
+streamlit.header("The fruit load list contains")
+streamlit.dataframe(my_data_row)
+    
+#--- use pandas to normalize json reposnse
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+#--- create dataframe of this response
 streamlit.header("End Debug!!")  
-#streamlit.header("The fruit load list contains")
-#streamlit.dataframe(my_data_row)
-#    
-##--- use pandas to normalize json reposnse
-#fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-##--- create dataframe of this response
-#
 ##--- don't run anything past here while we troubleshot
 #streamlit.stop()
 #
