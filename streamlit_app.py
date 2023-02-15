@@ -61,7 +61,6 @@ streamlit.header("The fruit load list contains")
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 #--- create dataframe of this response
 ##--- don't run anything past here while we troubleshot
-streamlit.header("End Debug!!")  
 
 #streamlit.stop()
 #
